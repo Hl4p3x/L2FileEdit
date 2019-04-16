@@ -1,4 +1,3 @@
-//Fixed by L2Miko v24
 FS = "\t";
 HEADER = 1;
 RECCNT = OFF;
@@ -8,9 +7,9 @@ ORD_IGNORE = 0;
 
 {
 	UINT id;
-	UNICODE name;
-	ASCF str;
-	UNICODE icon;
-	UNICODE unk;
-	ASCF Desc;
+    UINT name;
+    ASCF Desc;
+    UINT icon;
+    UINT border;
+    ASCF Unk;
 }
