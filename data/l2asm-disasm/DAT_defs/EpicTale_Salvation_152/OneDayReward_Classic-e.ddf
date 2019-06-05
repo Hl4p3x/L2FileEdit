@@ -1,6 +1,5 @@
-// by gyo
 FS = "\t";
-RECCNT = OFF;
+RECCNT = -1;
 HEADER = YES;
 MTXCNT_OUT = YES;
 MATCNT_OUT = YES;
@@ -9,13 +8,23 @@ ORD_IGNORE = NO;
 
 {
 	UINT id;
-	UINT reward_id;
+	UINT unk;
 	ASCF reward_name;
 	UINT reward_count;
 	ASCF mission_summary;
 	ASCF receive_cond;
-	CNTR cnt;
-	INT class_filter[cnt];
+	CNTR class_cnt;
+	INT class_filter[class_cnt];
+	UINT cycle;
+	UINT times;
+	UINT available_level;
+	UINT unlock_level;
+	UINT max_level;
+	UINT unk2;
+	UINT loc_cnt;
+	UCHAR day_cnt;
+	UINT days[day_cnt];
+	UINT kind;
 	//
 	// wanna write like this, if we can...
 	// {
@@ -26,12 +35,12 @@ ORD_IGNORE = NO;
 	// instead of below
 	//
 	INT item_id_0;
-        ENBBY = [(reward_count:-1,1)];
+	        ENBBY = [(reward_count:-1,1)];
 		ENBBY = [(reward_count:-2,2)];
 		ENBBY = [(reward_count:-4,4)];
 		ENBBY = [(reward_count:-8,8)];
 	INT item_num_0;
-        ENBBY = [(reward_count:-1,1)];
+        	ENBBY = [(reward_count:-1,1)];
 		ENBBY = [(reward_count:-2,2)];
 		ENBBY = [(reward_count:-4,4)];
 		ENBBY = [(reward_count:-8,8)];
@@ -81,4 +90,12 @@ ORD_IGNORE = NO;
 		ENBBY = [(reward_count:-8,8)];
 	INT item_num_7;
 		ENBBY = [(reward_count:-8,8)];
+	INT LOC_1;
+		ENBBY = [(loc_cnt,1)];
+	INT LOC_2;
+		ENBBY = [(loc_cnt,1)];
+	INT LOC_3;
+		ENBBY = [(loc_cnt,1)];
+	INT LOC_RADIUS;
+		ENBBY = [(loc_cnt,1)];
 }
