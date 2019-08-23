@@ -8,15 +8,16 @@ ORD_IGNORE = NO;
 
 {
 	UWORD level?;
-	UWORD idAndOrder;
+	UWORD typeAndOrder;
 	UINT npcId;
-	UINT unk3;
+	UINT unk;
 	UINT stage;
 	UINT atk;
 	UINT def;
 	UINT crit_rate;
 	UINT crit_dam;
 	UINT exp;
+	UINT unk2;
 	UCHAR cnt;
 	INT unk_id_0;
 	    ENBBY = [(cnt:-1,1)];

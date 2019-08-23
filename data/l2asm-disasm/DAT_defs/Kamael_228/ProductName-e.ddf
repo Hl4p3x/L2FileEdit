@@ -1,0 +1,15 @@
+FS = "\t";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+    UINT name;
+    ASCF Desc;
+    UINT icon;
+    UINT border;
+    ASCF Unk;
+}
