@@ -9,9 +9,13 @@ ORD_IGNORE = NO;
 {
 	UINT id;
 	ASCF Abnormal_Effect;
-	UINT UNK_0;
-    UINT UNK_1;
-    UINT String_Id;
-	UINT UNK_2;
-	FLOAT UnknownFloat[7];
+	UINT screen_effect;
+    UINT attach_bone_name;
+	UINT attach_type;
+	UINT offset_position1;
+	UINT offset_position2;
+	UINT offset_position3;
+	UINT scaling_cylinder;
+	UINT locate_on_foot;
+	UINT posteffect_id;
 }
