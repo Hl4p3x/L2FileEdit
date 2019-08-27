@@ -1,4 +1,3 @@
-//early version submitted by Allen (L2Sexi Server)
 FS = "\t";
 RECCNT = OFF;
 HEADER = YES;
@@ -8,7 +7,10 @@ MAGIC = 0;
 ORD_IGNORE = NO;
 
 {
-	UINT Race;
+	UINT class;
+	UINT class_role;
+	UCHAR class_role_name;
+	UCHAR class_transfer_degree;
 	UINT STR;
  	UINT DEX;
 	UINT CON;
@@ -17,5 +19,5 @@ ORD_IGNORE = NO;
 	UINT MEN;
 	UINT LUC;
 	UINT CHA;
-	ASCF Name;
+	ASCF description;
 }
